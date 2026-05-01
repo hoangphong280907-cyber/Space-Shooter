@@ -394,7 +394,7 @@
         let expNeeded = getExpNeeded(level);
         
         // Player
-        const player = { x: canvas.width/2, y: canvas.height-100, w: 36, h: 36, speed: 8 };
+        const player = { x: canvas.width/2, y: canvas.height-100, w: 36, h: 36, speed: 16 };
         
         // ========== AUDIO WITH VOLUME ==========
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -494,11 +494,11 @@
         
         // Enemy types
         const enemyTypes = [
-            { shape: 'triangle', color: '#f00', health: 1, speed: 1.8, points: 10, shootChance: 0 },
-            { shape: 'square', color: '#ff8800', health: 2, speed: 1.3, points: 15, shootChance: 0.015 },
-            { shape: 'circle', color: '#ff0', health: 1, speed: 2.2, points: 12, shootChance: 0.01 },
-            { shape: 'polygon', sides: 5, color: '#0f0', health: 2, speed: 1.0, points: 20, shootChance: 0.02 },
-            { shape: 'polygon', sides: 6, color: '#f0f', health: 3, speed: 0.8, points: 25, shootChance: 0.025 }
+            { shape: 'triangle', color: '#f00', health: 5, speed: 1.8, points: 10, shootChance: 0.01 },
+            { shape: 'square', color: '#ff8800', health: 15, speed: 1.3, points: 15, shootChance: 0.015 },
+            { shape: 'circle', color: '#ff0', health: 20, speed: 2.2, points: 20, shootChance: 0.01 },
+            { shape: 'polygon', sides: 5, color: '#0f0', health: 25, speed: 1.0, points: 25, shootChance: 0.02 },
+            { shape: 'polygon', sides: 6, color: '#f0f', health: 35, speed: 0.8, points: 50, shootChance: 0.001 }
         ];
         
         // Stars background
@@ -610,7 +610,7 @@
         }
         
         let lastSpawn = 0;
-        const baseSpawnDelay = 1600;
+        const baseSpawnDelay = 1800;
         
         function spawnEnemy() {
             if (!gameRunning) return;
