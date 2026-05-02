@@ -572,16 +572,16 @@
         
         const upgradeValues = {
             damage: { base: 2, max: 100 },
-            fireRate: { base: 5, max: 200 },
+            fireRate: { base: 8, max: 100 },
             health: { base: 15, max: 100 },
-            speed: { base: 0.6, max: 10 }
+            speed: { base: 0.8, max: 10 }
         };
         
         const upgradeOptions = [
             { name: "⚡ DAMAGE BOOST", desc: "+2 Damage", effect: "damage", icon: "🗡️" },
-            { name: "🔥 RAPID FIRE", desc: "Faster shooting (-5ms CD)", effect: "fireRate", icon: "🏹" },
+            { name: "🔥 RAPID FIRE", desc: "Faster shooting (-8ms CD)", effect: "fireRate", icon: "🏹" },
             { name: "🛡️ HP BOOST", desc: "+15 Max Health", effect: "health", icon: "💪" },
-            { name: "💨 SPEED BOOST", desc: "+0.6 Speed", effect: "speed", icon: "⚡" }
+            { name: "💨 SPEED BOOST", desc: "+0.8 Speed", effect: "speed", icon: "⚡" }
         ];
         
         function showUpgradePanel() {
